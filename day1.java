@@ -6,5 +6,6 @@ day1(){
     int b = 5;
     int c = a+b;
     System.out.println("the sum of two munber is "+c);
+
     }
 }
