@@ -1,0 +1,37 @@
+public class Student{
+    public double roll;
+    public String name;
+    public String course;
+    public int m1,m2,m3;
+    
+    public int total(){
+        return m1+m2+m3;
+    }
+    public float average(){
+        return (float)total()/3;
+    }
+    public char grade(){
+        if(average()>=60)
+            return 'A';
+        else
+            return 'B';
+    }
+    public String details(){
+        return "roll number :"+roll+"\n name :"+name+"\ncourse :"+course+"\n"; 
+    }
+    
+    public static void main(String[] args){
+        Student s = new Student();
+        s.roll=12;
+        s.name="jhon";
+        s.course="cse";
+        s.m1=70;
+        s.m2=80;
+        s.m3=65;
+        
+        System.out.println("total :"+s.total());
+        System.out.println("average :"+s.average());
+        System.out.println("details"+s.details());
+        
+    }
+}
