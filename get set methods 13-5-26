@@ -1,0 +1,41 @@
+public class Rectangle{
+    public double length;
+    public double breadth;
+    
+    public double area(){
+        return getLength()*getBreadth();
+    }
+    public double perimeter(){
+        return 2*(getLength()+getBreadth());
+    }
+    public boolean isSqure(){
+        if(length == breadth)
+            return true;
+        else
+            return false;
+    }
+    public double  getLength(){
+    return length;
+    }
+    public double getBreadth(){
+        return breadth;
+    }
+    public void setLength(double l){
+        length=l;
+}
+    public void setBreadth(double b){
+        breadth=b;
+}
+    
+    public static void main(String[] args){
+        Rectangle r1 = new Rectangle();
+        r1.setLength(10.5);
+        r1.setBreadth(10.5);
+        System.out.println(r1.area());
+        System.out.println(r1.perimeter());
+        System.out.println(r1.isSqure());
+        
+        System.out.println(r1.getLength());
+        System.out.println(r1.getBreadth());
+    }
+}
