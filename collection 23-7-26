@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class CharacterFinder {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Accept string input
+        System.out.print("Enter a string: ");
+        String text = scanner.nextLine();
+
+        // Accept index input
+        System.out.print("Enter an index: ");
+        
+        try {
+            int index = scanner.nextInt();
+            
+            // Retrieve and display the character
+            char character = text.charAt(index);
+            System.out.println("Character at index " + index + " is: " + character);
+            
+        } catch (StringIndexOutOfBoundsException e) {
+            // Handle invalid string index
+            System.out.println("Error: The index is outside the valid range.");
+            System.out.println("Valid index range for this string is 0 to " + (text.length() - 1));
+            
+        } catch (Exception e) {
+            // Handle non-integer inputs
+            System.out.println("Error: Please enter a valid integer for the index.");
+        } finally {
+            scanner.close();
+        }
+    }
+}
