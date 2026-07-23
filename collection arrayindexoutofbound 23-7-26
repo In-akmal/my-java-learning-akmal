@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ArrayExceptionHandling {
+    public static void main(String[] args) {
+        // Initialize an array with multiple integers
+        int[] numbers = {10, 20, 30, 40, 50};
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter an index position to access (0 to 4): ");
+        
+        try {
+            // Read user input
+            int index = scanner.nextInt();
+            
+            // Attempt to access the element at the specified index
+            int element = numbers[index];
+            System.out.println("Element at index " + index + " is: " + element);
+            
+        } catch (ArrayIndexOutOfBoundsException e) {
+            // Handle the specific exception for an invalid array index
+            System.out.println("Error: The index you entered is outside the valid range of the array.");
+            System.out.println("Exception message: " + e.getMessage());
+            
+        
+        scanner.close();
+        
+    }
+    }
+}
