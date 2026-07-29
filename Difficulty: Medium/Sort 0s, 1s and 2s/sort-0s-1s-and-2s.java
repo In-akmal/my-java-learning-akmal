@@ -14,7 +14,7 @@ class Solution {
             
         }
         int k = arr.length-1;
-        for(int i=arr.length-1; i>=j; i--){
+        for(int i=k; i>=j; i--){
             if(arr[i]==2){
                 int temp = arr[i];
                 arr[i]=arr[k];
