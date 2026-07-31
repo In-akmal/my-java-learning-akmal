@@ -15,8 +15,7 @@ class Solution {
         int left = 0;
         int right = arr.length - 1;
         int minDiff = Integer.MAX_VALUE;
-        int maxAbsDiff = Integer.MIN_VALUE; // To track the max absolute difference between pairs
-        
+        int maxAbsDiff = Integer.MIN_VALUE;   
         int resLeft = -1;
         int resRight = -1;
         
@@ -33,7 +32,6 @@ class Solution {
                 resRight = arr[right];
             }
             
-            // Move pointers intelligently based on the sum
             if (currentSum < target) {
                 left++;
             } else {
