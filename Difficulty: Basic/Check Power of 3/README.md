@@ -1,0 +1,9 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/check-a-integer-is-power-of-3-or-not3850/1?page=3">Check Power of 3</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p data-start="39" data-end="112"><span style="font-size: 14pt;">Given a positive integer <strong data-start="64" data-end="69">n</strong>, find if it is a power of <strong data-start="106" data-end="111">3</strong>.&nbsp;</span><span style="font-size: 14pt;">A number is said to be a power of <strong>3</strong> if it can be expressed as <strong><span class="katex"><span class="katex-mathml">3<sup>x</sup></span></span></strong>&nbsp;for some non-negative integer <strong>x</strong>.</span></p>
+<p><strong><span style="font-size: 18px;">Examples:</span></strong></p>
+<pre><span style="font-size: 18px;"><strong data-start="235" data-end="245">Input:</strong> n = 3
+<strong data-start="254" data-end="265">Output:</strong> true
+<strong data-start="273" data-end="289">Explanation:</strong> 3 = 3<sup>1</sup>, so it is a power of 3.</span></pre>
+<pre><span style="font-size: 14pt;"><strong data-start="418" data-end="428">Input:</strong> n = 1</span><span style="font-size: 14pt;">
+<strong data-start="437" data-end="448">Output:</strong> true</span><span style="font-size: 14pt;">
+<strong data-start="456" data-end="472">Explanation:</strong> 1 = 3<sup>0</sup>, so it is a power of 3.</span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 </span><span style="font-size: 18px;">≤ n </span><span style="font-size: 18px;">≤ 10<sup>9</sup></span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Mathematical</code>&nbsp;
